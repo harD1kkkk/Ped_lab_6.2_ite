@@ -1,6 +1,8 @@
+
 #include <iostream>
 #include <ctime>
 #include <cstdlib>
+#include <iomanip>
 
 using namespace std;
 
@@ -12,7 +14,7 @@ void CreateArrayWithRandomElements(int* a, int numberOfElements, int start, int 
 
 void PrintArray(int* a, int size) {
     for (int i = 0; i < size; i++) {
-        cout << "a[" << i << "] = " << a[i] << "; ";
+        cout << "a[" << setw(2) << i << " ] = " << setw(4) << a[i] << endl;
     }
     cout << endl;
 }
